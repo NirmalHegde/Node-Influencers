@@ -1,11 +1,14 @@
 import React from 'react';
-import PostList from './Components/PostList'
+import { Grid } from '@material-ui/core';
+import Header from './Components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <PostList/>
-    </div>
+    <Grid container direction = "column">
+      <Grid item>
+        <Header/>
+      </Grid>
+    </Grid>
   );
 }
 
