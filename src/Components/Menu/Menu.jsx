@@ -9,48 +9,15 @@ import ImageIcon from '@material-ui/icons/Image';
 import StarIcon from '@material-ui/icons/Star';
 import RateReviewIcon from '@material-ui/icons/RateReview';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import { makeStyles } from '@material-ui/styles';
+import MenuStyles from "./MenuStyles";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        height: "700px",
-        width: "100%",
-    },
-    companyLogo: {
-        padding: "2% 44%"
-    },
-    companyText: {
-        textAlign: "center",
-        padding: "3%"
-    },
-    createButton: {
-        borderRadius: 20,
-        background: "#FFFFFF",
-        fontFamily: "Montserrat",
-        textTransform: "none",
-        color: "primary",
-        marginTop: "8%",
-        marginBottom: "6%",
-        marginLeft: "20%",
-    },
-    inactiveButton: {
-        textTransform: "none",
-        color: "primary",
-        justifyContent: "flex-start",
-        width: "100%",
-        padding: "4% 12%"
-
-    },
-    activeButton: {
-        textTransform: "none",
-    }
-}));
-
+//sidebar section of the website
 export default function Menu() {
-    const classes = useStyles();
+    const classes = MenuStyles(); //gets styles from MenuStyles.jsx
 
     return (
         <Paper className={classes.root} variant="outlined" square>
+            {/*Company section to tell which company is being looked at*/}
             <Avatar className={classes.companyLogo} alt="company logo" src={companyLogo} />
             <Typography className={classes.companyText}>
                 <b>Smash Kitchen</b>
@@ -60,13 +27,14 @@ export default function Menu() {
 
             <Divider variant="middle" />
 
+            {/*Main buttons of the website*/}
             <Button variant="contained" className={classes.createButton} startIcon={<AddIcon />}><b>Create Node</b></Button>
             <br />
             <Button className={classes.inactiveButton} startIcon={<DashboardIcon />}>Dashboard</Button>
             <br />
             <Button className={classes.inactiveButton} startIcon={<SearchIcon />}>My Nodes</Button>
             <br />
-            <Button className={classes.inactiveButton} startIcon={<PeopleIcon />}>Influencers</Button>
+            <Button className={classes.inactiveButton} startIcon={<PeopleIcon />}>Influencers</Button> {/*Active button in this webpage*/}
             <br />
             <Button className={classes.inactiveButton} startIcon={<ImageIcon />}>Content</Button>
             <br />
