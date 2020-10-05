@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePic from "./profilePic.png"
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import { Card,CardActions, CardContent, Button, Typography, CardHeader } from '@material-ui/core';
@@ -26,7 +27,7 @@ export default function InfluencerCard(props) {
   return (
     <Card className={classes.root}>
         <CardHeader
-            avatar={ <Avatar alt="Profile Picture" src={"/profilePic.png"} /> }
+            avatar={ <Avatar alt="Profile Picture" src={profilePic} /> }
             title={handle}
             subtitle={indicator}
         />
