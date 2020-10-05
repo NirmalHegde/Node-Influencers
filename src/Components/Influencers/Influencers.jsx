@@ -1,14 +1,16 @@
 import React from 'react';
-import Card from './Card';
+import InfluencerCard from './InfluencerCard';
 import { Grid, Typography } from '@material-ui/core';
 
-export default function Influencers() {
 
+export default function Influencers() {
   return (
-      <Grid container spacing={7}>
-        <Typography>Influencers</Typography>
+      <Grid container>
+        <Grid item xs={12}>
+          <Typography>Influencers</Typography>
+        </Grid>
         <Grid item xs={5}>
-          <Card
+          <InfluencerCard
             handle="@potato"
             indicator="claimed"
             date="today"

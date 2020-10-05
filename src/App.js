@@ -3,11 +3,19 @@ import { Grid } from '@material-ui/core';
 import Header from './Components/Header/Header';
 import Menu from './Components/Menu/Menu';
 import Influencers from './Components/Influencers/Influencers';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles(() => ({
+  root: {
+      background: "#F9F9F9"
+  }
+}))
 
 function App() {
+  const classes = useStyles();
   return (
     //layout of node website
-    <Grid container direction = "column">
+    <Grid className={classes.root} container direction = "column">
       <Grid item xs={12}>
         <Header />
       </Grid>
