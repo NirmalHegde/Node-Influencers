@@ -1,6 +1,6 @@
 import React from 'react';
 import headerLogo from './headerLogo.png'
-import { AppBar, Toolbar, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Divider } from '@material-ui/core';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import HeaderStyles from "./HeaderStyles";
 
@@ -11,9 +11,15 @@ const Header = () => {
     return (
     <AppBar className={classes.root} position="static"> {/*Static ensures header is always visible (scalability)*/}
         <Toolbar>
-            <img alt='Node' classname={classes.logo} src={headerLogo}></img> {/*Website Logo*/}
+            <img alt='Node' className={classes.logo} src={headerLogo}></img> {/*Website Logo*/}
 
-            <IconButton className={classes.exitButton} aria-label="exit"> {/*Exit button, functionality can be added as seen fit using onClick*/}
+            <div className={classes.dividerSpacing} />
+
+            <Divider orientation="vertical" flexItem />
+
+            <div className={classes.exitSpacing}></div>
+
+            <IconButton aria-label="exit"> {/*Exit button, functionality can be added as seen fit using onClick*/}
                 <ExitToAppIcon />
             </IconButton>
         </Toolbar>

@@ -3,11 +3,14 @@ import { makeStyles } from '@material-ui/styles';
 
 const HeaderStyles = makeStyles((theme) => ({
     root: {
-        background: "#FFFFFF"
+        background: "#FFFFFF",
     },
-    exitButton: {
-        marginLeft: "88%"
+    dividerSpacing: {
+        flexGrow: 0.104,
+    },
+    exitSpacing: {
+        flexGrow: 0.87,
     }
-}))
+})) 
 
 export default HeaderStyles;
