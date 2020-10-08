@@ -4,7 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { Card, CardContent, Typography, CardHeader } from '@material-ui/core';
 
 export default function InfluencerCard(props) {
-  const { handle, indicator, date, message} = props;
+  const { handle, indicator, date, message } = props;
 
   return (
     <Card>
