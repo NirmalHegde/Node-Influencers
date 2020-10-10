@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const MenuStyles = makeStyles((theme) => ({
     root: {
-        height: 695,
+        height: 695.5,
         marginTop: "-1.802%",
         width: "100%",
     },

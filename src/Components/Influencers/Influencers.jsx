@@ -13,6 +13,7 @@ const styles = theme => ({
   title: {
     fontSize: "22px",
     fontWeight: "bold",
+    color: "#404040",
   }
 });
 
@@ -27,7 +28,12 @@ class Influencers extends Component {
       .then(response => {
         console.log(response.data);
         this.setState({api: response.data});
+
       })
+  }
+
+  plswork(date) {
+    return "hi"
   }
 
   render() {
@@ -47,7 +53,7 @@ class Influencers extends Component {
                 profilePic={profilePic} 
                 handler={"@" + api.handler + "-" + api.instagramId}
                 indicator={(api.status === "claimed") ? "Claimed" : (api.status === "activate") ? "Shipped" : "Submitted"}
-                date=""
+                date={new Date(api.date).toDateString().substring(4)}
                 message={(api.status === "claimed") ? claimedMessage + api.name : (api.status === "activate") ? shippedMessage : submittedMessage}
                 id={api.nodeId}            
               />

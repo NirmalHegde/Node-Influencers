@@ -1,6 +1,6 @@
 import React from 'react';
 import InfluencerCardStyles from './InfluencerCardStyles';
-import { Card, CardHeader, CardActionArea, Avatar } from '@material-ui/core';
+import { Card, CardHeader, CardActionArea, Avatar, Typography } from '@material-ui/core';
 
 export default function InfluencerCard(props) {
   const classes = InfluencerCardStyles();
@@ -13,14 +13,13 @@ export default function InfluencerCard(props) {
               classes={{
                 root: classes.root,
                 avatar: classes.avatar,
-                title: classes.title,
                 action: (indicator === "Claimed") ? classes.actionClaimed : (indicator === "Submitted") ? classes.actionSubmitted : classes.actionShipped,
                 subheader: classes.subheader,
               }}
               avatar={ <Avatar alt="Profile Picture" src={profilePic} /> }
-              title={handler}
-              subheader={date+ " - "+message}
-              action={indicator}
+              title={<Typography className={classes.title}>{handler}</Typography>}
+              subheader={<div><b>{date}</b>{" - " + message}</div>}
+              action={<Typography className={classes.actionSize}>{indicator}</Typography>}
           />
         </CardActionArea>
     </Card>
