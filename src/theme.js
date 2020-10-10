@@ -2,10 +2,12 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 //Theme setup for UI
 const theme = createMuiTheme({
+  //change primary font to Montserrat for whole website
   typography: {
-    fontFamily: "Montserrat, Helvetica, Arial, sans-serif", //added Montserrat as primary font
+    fontFamily: "Montserrat, Helvetica, Arial, sans-serif",
   },
 
+  //set colour pallete
   palette: {
     primary: {
       light: "#757575", //light grey
@@ -16,21 +18,25 @@ const theme = createMuiTheme({
     }
   },
 
+  //override tab themes to accomodate Figma UI
   overrides: {
+      //format tab indicator (colour is based on secondary colour of colour pallete)
       MuiTabs: {
         indicator: {
             left: 0,
             width: "3px"
         }
       },
-      
+      //format tab contents
       MuiTab: {
         root: {
-            textTransform: "none",
+            textTransform: "none", 
+            //formats selected tab contents
             '&$selected': {
                 backgroundColor: "#F6F6F6",
                 color: '#FFBF14',
             },
+            //allows for hover functionality
             '&:hover': {
               background: '#F6F6F6'
             }

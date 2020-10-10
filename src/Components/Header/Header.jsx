@@ -1,7 +1,10 @@
+//React/Material UI Libraries
 import React from 'react';
-import headerLogo from './headerLogo.png'
 import { AppBar, Toolbar, IconButton, Divider } from '@material-ui/core';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+//File Imports
+import headerLogo from './headerLogo.png'
 import HeaderStyles from "./HeaderStyles";
 
 //header section of website
@@ -9,21 +12,23 @@ const Header = () => {
     const classes = HeaderStyles(); //gains styles from HeaderStyles.jsx
 
     return (
-    <AppBar className={classes.root} position="static"> {/*Static ensures header is always visible (scalability)*/}
-        <Toolbar>
-            <img alt='Node' className={classes.logo} src={headerLogo}></img> {/*Website Logo*/}
+        //container for header of website
+        <AppBar className={classes.root} position="static"> {/*Static ensures header is always visible*/}
+            <Toolbar>
+                <img alt='Node' className={classes.logo} src={headerLogo}></img> {/*Node Logo*/}
 
-            <div className={classes.dividerSpacing} />
+                <div className={classes.dividerSpacing} /> {/*spacing for line*/}
 
-            <Divider orientation="vertical" flexItem />
+                <Divider orientation="vertical" flexItem />
 
-            <div className={classes.exitSpacing}></div>
+                <div className={classes.exitSpacing}></div> {/*spacing for exit button*/}
 
-            <IconButton aria-label="exit"> {/*Exit button, functionality can be added as seen fit using onClick*/}
-                <ExitToAppIcon />
-            </IconButton>
-        </Toolbar>
-    </AppBar>
+                {/*Exit button; functionality can be added as seen fit using onClick*/}
+                <IconButton aria-label="exit">
+                    <ExitToAppIcon />
+                </IconButton>
+            </Toolbar>
+        </AppBar>
     );
 };
 

@@ -1,3 +1,4 @@
+//Styles for InfluencerCard
 import { makeStyles } from '@material-ui/styles';
 
 const InfluencerCardStyles = makeStyles((theme) => ({

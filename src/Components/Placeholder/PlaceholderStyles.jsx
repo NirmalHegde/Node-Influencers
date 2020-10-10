@@ -1,3 +1,4 @@
+//Styles for Placeholder
 import { makeStyles } from '@material-ui/styles';
 
 const PlaceholderStyles = makeStyles((theme) => ({
