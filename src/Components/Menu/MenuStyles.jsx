@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/styles';
 
 const MenuStyles = makeStyles((theme) => ({
     root: {
-        height: 694,
+        height: 695,
         marginTop: "-1.802%",
-        width: "100%",
+        width: "85%",
     },
     companyLogo: {
         padding: "3% 43%",
@@ -22,7 +22,7 @@ const MenuStyles = makeStyles((theme) => ({
         color: "primary",
         marginTop: "8%",
         marginBottom: "6%",
-        marginLeft: "20%",
+        marginLeft: "15%",
     },
     inactiveButton: {
         textTransform: "none",

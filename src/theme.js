@@ -30,9 +30,12 @@ const theme = createMuiTheme({
             '&$selected': {
                 backgroundColor: "#F6F6F6",
                 color: '#FFBF14',
-            } 
+            },
+            '&:hover': {
+              background: '#F6F6F6'
+            }
         }
-      }
+      },
     }
 });
 

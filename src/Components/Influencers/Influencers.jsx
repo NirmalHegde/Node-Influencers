@@ -1,7 +1,9 @@
 import React, { Component }   from 'react';
 import axios from 'axios';
 import InfluencerCard from './InfluencerCard';
+import profilePic from "./profilePic.png"
 import { Grid, Typography } from '@material-ui/core';
+
 
 class Influencers extends Component {
   state = {
@@ -17,18 +19,27 @@ class Influencers extends Component {
   }
 
   render() {
+    const claimedMessage = "Claimed your node ";
+    const shippedMessage = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit massa";
+    const submittedMessage = "Sed sagittis sem leo, non blandit est tempor at. Cras a urna eget nulla lobortis placerat.";
+
     return (
-      <Grid container direction="row">
+      <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography>Influencers</Typography>
         </Grid>
-        <Grid item xs={5}>
-          {this.state.api.map(api => 
-            <InfluencerCard 
-              handle={"@" + api.handler}
-              indicator={api.status}
-              date="" message={api.status} />)}
-        </Grid>         
+        {this.state.api.map(api => 
+            <Grid key={api.nodeId + api.instagramId} item xs={12} sm={6}>
+              <InfluencerCard
+                profilePic={profilePic} 
+                handler={"@" + api.handler + "-" + api.instagramId}
+                indicator={(api.status === "claimed") ? "Claimed" : (api.status === "activate") ? "Shipped" : "Submitted"}
+                date=""
+                message={(api.status === "claimed") ? claimedMessage + api.name : (api.status === "activate") ? shippedMessage : submittedMessage}
+                id={api.nodeId}            
+              />
+            </Grid>
+        )}        
       </Grid>
   );
   }
