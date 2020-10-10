@@ -3,6 +3,18 @@ import axios from 'axios';
 import InfluencerCard from './InfluencerCard';
 import profilePic from "./profilePic.png"
 import { Grid, Typography } from '@material-ui/core';
+import { withStyles } from "@material-ui/core/styles";
+
+const styles = theme => ({
+  root: {
+    marginTop: "1%",
+    marginLeft: "1%",
+  },
+  title: {
+    fontSize: "22px",
+    fontWeight: "bold",
+  }
+});
 
 
 class Influencers extends Component {
@@ -19,14 +31,15 @@ class Influencers extends Component {
   }
 
   render() {
+    const { classes } = this.props;
     const claimedMessage = "Claimed your node ";
     const shippedMessage = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit massa";
     const submittedMessage = "Sed sagittis sem leo, non blandit est tempor at. Cras a urna eget nulla lobortis placerat.";
 
     return (
-      <Grid container spacing={3}>
+      <Grid className={classes.root} container spacing={3}>
         <Grid item xs={12}>
-          <Typography>Influencers</Typography>
+          <Typography className={classes.title}>Influencers</Typography>
         </Grid>
         {this.state.api.map(api => 
             <Grid key={api.nodeId + api.instagramId} item xs={12} sm={6}>
@@ -45,4 +58,4 @@ class Influencers extends Component {
   }
 }
 
-export default Influencers;
+export default withStyles(styles, { withTheme: true })(Influencers);

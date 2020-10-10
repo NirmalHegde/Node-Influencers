@@ -11,6 +11,7 @@ export default function InfluencerCard(props) {
         <CardActionArea style={{height:"100%"}}>
           <CardHeader
               classes={{
+                root: classes.root,
                 avatar: classes.avatar,
                 title: classes.title,
                 action: (indicator === "Claimed") ? classes.actionClaimed : (indicator === "Submitted") ? classes.actionSubmitted : classes.actionShipped,
@@ -18,7 +19,7 @@ export default function InfluencerCard(props) {
               }}
               avatar={ <Avatar alt="Profile Picture" src={profilePic} /> }
               title={handler}
-              subheader={message}
+              subheader={date+ " - "+message}
               action={indicator}
           />
         </CardActionArea>
