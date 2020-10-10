@@ -28,7 +28,9 @@ export default function Menu() {
         <Grid container direction="row">
             <Grid item xs={12} sm={2}>
                 <Paper square className={classes.root}>
-                    <Avatar className={classes.companyLogo} alt="company logo" src={companyLogo} />
+                    <Paper className={classes.companyLogoCentering} elevation={0}>
+                        <Avatar className={classes.companyLogo} alt="company logo" src={companyLogo} />
+                    </Paper>
                     <Typography className={classes.companyText}>
                         <b>Smash Kitchen</b>
                         <br />
@@ -38,13 +40,10 @@ export default function Menu() {
                     <Divider variant="middle" />
 
                     {/*Main buttons of the website*/}
-                    <Button variant="contained" className={classes.createButton} startIcon={<AddIcon />}><b>Create Node</b></Button>
-                    <br />
-                    <Tabs
-                        orientation="vertical"
-                        value={tab}
-                        onChange={handleChange}
-                    >
+                    <Paper className={classes.createButtonCentering} elevation={0}>
+                        <Button variant="contained" className={classes.createButton} startIcon={<AddIcon />}><b>Create Node</b></Button>
+                    </Paper>
+                    <Tabs className={classes.tabs} orientation="vertical" value={tab} onChange={handleChange}>
                         <Tab label={<div> <DashboardIcon className={classes.dashboardIcon} /> &nbsp; Dashboard </div>} />
                         <Tab label={<div> <SearchIcon className={classes.myNodesIcon} /> &nbsp; My Nodes </div>} />
                         <Tab label={<div> <PeopleIcon className={classes.influencersIcon} /> &nbsp; Influencers </div>} />

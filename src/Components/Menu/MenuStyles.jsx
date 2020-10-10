@@ -5,15 +5,23 @@ const MenuStyles = makeStyles((theme) => ({
     root: {
         height: 695,
         marginTop: "-1.802%",
-        width: "85%",
+        width: "100%",
+    },
+    companyLogoCentering: {
+        marginTop: "2%",
+        display: "flex",
+        justifyContent: "center",
     },
     companyLogo: {
-        padding: "3% 43%",
-        marginTop: "5px",
+        marginTop: "10%",
     },
     companyText: {
         textAlign: "center",
-        padding: "3%",
+        marginBottom: "5%",
+    },
+    createButtonCentering: {
+        display: "flex",
+        justifyContent: "center",
     },
     createButton: {
         borderRadius: 20,
@@ -22,15 +30,9 @@ const MenuStyles = makeStyles((theme) => ({
         color: "primary",
         marginTop: "8%",
         marginBottom: "6%",
-        marginLeft: "15%",
     },
-    inactiveButton: {
-        textTransform: "none",
-        color:'primary',
-        justifyContent: "flex-start",
+    tabs: {
         width: "100%",
-        padding: "4% 12%",
-
     },
     dashboardIcon:{
         marginBottom: "-6.2%",

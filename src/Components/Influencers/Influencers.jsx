@@ -7,8 +7,8 @@ import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
   root: {
-    marginTop: "1%",
-    marginLeft: "1%",
+    marginTop: "2%",
+    marginLeft: "4%",
   },
   title: {
     fontSize: "22px",
