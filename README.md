@@ -4,15 +4,15 @@ This is a web application for the Node App coding challenge. It is created using
 <br />
 
 ## Versions Being Used
-Node: ``v12.18.2``
+Node: ``12.18.2``
 <br />
 NPM: ``6.14.5``
 <br />
-React: ``v16.13.1``
+React: ``16.13.1``
 <br />
 Axios: ``0.20.0``
 <br />
-Material UI: ``v4.11.0``
+Material UI: ``4.11.0``
 
 <br />
 
