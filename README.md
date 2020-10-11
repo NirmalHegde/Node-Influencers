@@ -3,7 +3,7 @@ This is a React website for the Node App coding challenge. It is created using R
 
 <br />
 
-<b>Versions being used:</b>
+## Versions Being Used
 <br />
 Node: ``v12.18.2``
 <br />
