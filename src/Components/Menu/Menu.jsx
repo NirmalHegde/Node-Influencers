@@ -62,7 +62,7 @@ export default function Menu() {
             </Grid>
 
             {/*Grid section for actual webpages by changing tab state; redirects to placeholder for most, but can change*/}
-            <Grid item xs={12} sm={9}>
+            <Grid item xs={10} sm={9}>
                 {tab === 0 && <Placeholder />}
                 {tab === 1 && <Placeholder />}
                 {tab === 2 && <Influencers />}

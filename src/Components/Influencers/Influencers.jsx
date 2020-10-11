@@ -11,7 +11,7 @@ import profilePic from "./profilePic.png"
 //Quick Styling for margins and Title
 const styles = theme => ({
   root: {
-    marginTop: "2%",
+    marginTop: "1.5%",
     marginLeft: "4%",
   },
   title: {
@@ -62,7 +62,7 @@ class Influencers extends Component {
                 //Export to Avatar
                 profilePic={profilePic}
                 //Export to Title
-                handler={"@" + api.handler + "-" + api.instagramId + " " + api.name}
+                handler={"@" + api.handler + "-" + api.instagramId + "  " + api.name.split(" ")[0]}
                 //Change indicator data based on status and export to indicator
                 indicator={(api.status === "claimed") ? "Claimed" : (api.status === "activate") ? "Shipped" : "Submitted"}
                 //Convert date parameter to readable value then remove day of the week using substring and add comma after month and day number

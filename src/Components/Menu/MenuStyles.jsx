@@ -8,12 +8,12 @@ const MenuStyles = makeStyles((theme) => ({
         width: "100%",
     },
     companyLogoCentering: {
-        marginTop: "2%",
+        marginTop: "2.5%",
         display: "flex",
         justifyContent: "center",
     },
     companyLogo: {
-        marginTop: "10%",
+        marginTop: "7%",
     },
     companyText: {
         textAlign: "center",
@@ -32,7 +32,7 @@ const MenuStyles = makeStyles((theme) => ({
         marginBottom: "6%",
     },
     tabs: {
-        width: "100%",
+        display: "flex",
     },
     dashboardIcon:{
         marginBottom: "-6.2%",

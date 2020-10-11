@@ -6,7 +6,7 @@ const HeaderStyles = makeStyles((theme) => ({
         background: "#FFFFFF",
     },
     dividerSpacing: {
-        flexGrow: 0.104,
+        flexGrow: 0.089,
     },
     exitSpacing: {
         flexGrow: 0.87,
