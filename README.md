@@ -16,8 +16,8 @@ Material UI: ``v4.11.0``
 
 <br />
 
-## How to use
+## How to Use
 1) Download the repository and navigate inside ``node-influencers-master`` using a console.
-2) Run ``npm install`` to download all dependancies.
-3) Run ``npm start`` to start application and click ``http://localhost:3000``.
+2) Run ``npm install`` in console to download all dependancies.
+3) Run ``npm start`` in console to start application and click ``http://localhost:3000``.
 4) Enjoy!
