@@ -17,3 +17,6 @@ Material UI: ``4.11.0``
 2) Run ``npm install`` in console to download all dependancies.
 3) Run ``npm start`` in console to start application and click ``http://localhost:3000``.
 4) Enjoy!
+
+## App in Action
+![](samples/desktopVersion.gif)
