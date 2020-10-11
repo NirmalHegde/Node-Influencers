@@ -1,8 +1,6 @@
 # Node Influencers
 This is a web application for the Node App coding challenge. It is created using React(Frontend), Node(Backend), Axios(GET Requests), and Material UI(UI Components).
 
-<br />
-
 ## Versions Being Used
 Node: ``12.18.2``
 <br />
@@ -13,8 +11,6 @@ React: ``16.13.1``
 Axios: ``0.20.0``
 <br />
 Material UI: ``4.11.0``
-
-<br />
 
 ## How to Use
 1) Download the repository and navigate inside ``node-influencers-master`` using a console.
