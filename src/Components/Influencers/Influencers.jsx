@@ -43,7 +43,7 @@ class Influencers extends Component {
   render() {
     const { classes } = this.props; //import quick styles
     //Messages for cards
-    const claimedMessage = "Claimed your node ";
+    const claimedMessage = "Claimed your node Snow Allure Vodka - Luxury Moments";
     const shippedMessage = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit massa";
     const submittedMessage = "Sed sagittis sem leo, non blandit est tempor at. Cras a urna eget nulla lobortis placerat.";
 
@@ -68,7 +68,7 @@ class Influencers extends Component {
                 //Convert date parameter to readable value then remove day of the week using substring and add comma after month and day number
                 date={new Date(api.date).toDateString().substring(4).slice(0,6) + "," + new Date(api.date).toDateString().substring(4).slice(6)}
                 //Change message based on status then export to subHeader
-                message={(api.status === "claimed") ? claimedMessage + api.name : (api.status === "activate") ? shippedMessage : submittedMessage}           
+                message={(api.status === "claimed") ? claimedMessage : (api.status === "activate") ? shippedMessage : submittedMessage}           
               />
             </Grid>
         )}        
