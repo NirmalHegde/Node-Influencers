@@ -18,5 +18,7 @@ Material-UI: ``4.11.0``
 3) Run ``npm start`` in console to start application and click ``http://localhost:3000``.
 4) Enjoy!
 
+Alternatively, click this link: https://node-influencers.web.app/
+
 ## App in Action
 ![](samples/desktopVersion.gif)
