@@ -1,6 +1,6 @@
 //React/Material UI Libraries
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Divider } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton } from '@material-ui/core';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 //File Imports
@@ -16,10 +16,6 @@ const Header = () => {
         <AppBar className={classes.root} position="static"> {/*Static ensures header is always visible*/}
             <Toolbar>
                 <img alt='Node' className={classes.logo} src={headerLogo}></img> {/*Node Logo*/}
-
-                <div className={classes.dividerSpacing} /> {/*spacing for line*/}
-
-                <Divider orientation="vertical" flexItem />
 
                 <div className={classes.exitSpacing}></div> {/*spacing for exit button*/}
 
